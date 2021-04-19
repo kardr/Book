@@ -6,7 +6,7 @@ namespace Book
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Размер массива:");
 
 
 
