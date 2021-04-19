@@ -67,8 +67,8 @@ namespace Book
             {
                 for (int i =0; i<k; i++)
                 {
-                    sw.WriteLine(books[i].Avtor);
                     sw.WriteLine(books[i].Name);
+                    sw.WriteLine(books[i].Avtor);
                     sw.WriteLine(books[i].Ganr);
                 }
             }
