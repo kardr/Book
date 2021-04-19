@@ -13,9 +13,10 @@ namespace Book
 
         public Class1(int newn)
         {
-            n = newn;
-            books = new Book[n];
-
+           
+                n = newn;
+                books = new Book[n];
+            
         }
 
         public void Add(string nName, string nAvtor, string nGanr)
@@ -31,7 +32,7 @@ namespace Book
             {
                 for (int j = 0; j < k - i-1; j++)
                 {
-                    if (String.Compare(books[j].Ganr, books[j + 1].Ganr)<0)
+                    if ((String.Compare(books[j].Ganr, books[j + 1].Ganr)<0))
                     {
                         Book b1 = books[j];
                         books[j] = books[j + 1];
@@ -67,6 +68,7 @@ namespace Book
             {
                 for (int i =0; i<k; i++)
                 {
+                    sw.WriteLine("Запись №" + (i + 1).ToString());
                     sw.WriteLine(books[i].Name);
                     sw.WriteLine(books[i].Avtor);
                     sw.WriteLine(books[i].Ganr);
