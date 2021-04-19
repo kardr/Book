@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 
 namespace Book
 {
@@ -26,8 +27,20 @@ namespace Book
         }
         public void Sort()
         {
-
+            for (int i=0; i < k - 1; i++)
+            {
+                for (int j = 0; j < k - i; j++)
+                {
+                    if (String.Compare(books[j].Ganr, books[j + 1].Ganr)<0)
+                    {
+                        Book b1 = books[j];
+                        books[j] = books[j + 1];
+                        books[j + 1] = b1;
+                    }
+                }
+            }
         }
+
 
     }
 }
